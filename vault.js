@@ -15,12 +15,13 @@ module.exports = function() {
     } else {
       return vault[key];
     }
-
-
+  }
+  function setValue(key, value){
+    vault[key] = value;
   }
 
   return {
     getValue : getValue,
-    //setValue : setValue
+    setValue : setValue
   };
 };
